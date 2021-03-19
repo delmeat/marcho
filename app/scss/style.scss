@@ -681,13 +681,10 @@
     margin: 0 30px;
     @extend %roboto-400;
     font-size: 22px;
-    color: #909090;
+    color: $title;
   }
   &__link--active{
     color: $accent;
-  }
-  &__form{
-    // text-align: center;
   }
   &__label{
     margin-bottom: 40px;
@@ -716,6 +713,37 @@
   }
   &__error{
     color: $accent;
+  }
+  &__text{
+    margin-bottom: 30px;
+  }
+}
+
+.page-404{
+  padding: 110px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    max-width: 570px;
+    width: 100%;
+  }
+  &__title{
+    @extend %roboto-700;
+    font-size: 48px;
+    line-height: 26px;
+    color: #28384f;
+    margin-bottom: 40px;
+  }
+  &__text{
+    max-width: 470px;
+    margin-bottom: 60px;
+  }
+  &__link{
+    @extend %btn;
+    padding: 18px 30px
   }
 }
 
